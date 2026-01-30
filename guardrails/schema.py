@@ -9,3 +9,4 @@ class AnswerSchema(BaseModel):
     answer: str
     confidence: float = Field(ge=0.0, le=1.0)
     citations: List[Citation] = []
+    evidence: List[str] = []  # exact quotes from CONTEXT

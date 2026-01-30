@@ -31,6 +31,11 @@ You MUST follow these rules:
 5) Output MUST be valid JSON only (no extra text).
 6) citations must be a list of { "doc_id": "...", "chunk_id": <int> } for the chunks you used.
 7) confidence must be between 0 and 1.
+You MUST include evidence quotes copied EXACTLY from the CONTEXT.
+8) evidence must be a list of 1 to 3 short direct quotes (10 to 30 words each)
+9)Each quote must appear verbatim in the CONTEXT
+10) If you cannot provide evidence quotes, you MUST refuse:
+  {"answer":"I don't know","confidence":0.3,"citations":[],"evidence":[]}
 
 '''
 
